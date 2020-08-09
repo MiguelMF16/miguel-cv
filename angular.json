@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "miguel-cv"
+    }
+  },
+  "defaultProject": "miguel-cv",
+  "cli": {
+    "analytics": false
+  }
 }
