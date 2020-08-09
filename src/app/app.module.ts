@@ -10,7 +10,8 @@ import { AchievementsComponent } from './componentes/pages/achievements/achievem
 import { ProgrammingLanguageComponent } from './componentes/pages/programming-language/programming-language.component';
 import { StudiesComponent } from './componentes/pages/studies/studies.component';
 import { JobsComponent } from './componentes/pages/jobs/jobs.component';
-import { ProyectsComponent } from './componentes/pages/proyects/proyects.component';
+import { ProjectsComponent } from './componentes/pages/projects/projects.component';
+import { APP_ROUTING } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,11 @@ import { ProyectsComponent } from './componentes/pages/proyects/proyects.compone
     ProgrammingLanguageComponent,
     StudiesComponent,
     JobsComponent,
-    ProyectsComponent
+    ProjectsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]

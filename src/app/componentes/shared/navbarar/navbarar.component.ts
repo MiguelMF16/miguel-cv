@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavbararService, Menuvar } from '../../../services/navbarar.service';
 
 @Component({
   selector: 'app-navbarar',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbararComponent implements OnInit {
 
-  constructor() { }
+  menus: Menuvar[] = [];
+  // esta variable controla true=español false=inglés
+  idioma: boolean = true;
+
+  constructor(private navbararServices: NavbararService) {
+    this.menus = navbararServices.menus;
+    this.idioma = navbararServices.language;
+  }
+
+  public setLanguage = () =>{
+    this.navbararServices.setLanguage();
+  }
 
   ngOnInit(): void {
   }
