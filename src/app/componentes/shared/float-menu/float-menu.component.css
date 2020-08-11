@@ -1,0 +1,64 @@
+/* Pantallas con mas de 900px */
+/* @media screen and (min-width: 900px) {
+    .miguel-floatpanel{
+        margin-top: 20px;
+        min-width: 100px;
+        min-height: 400px;
+        max-width: 300px;
+        max-height: 200px;
+        border: dashed;
+    }
+    .invisible-m{
+        margin-top: 20px;
+        border: solid;
+        max-width: 150px;
+        max-height: 40px;
+    }
+  }
+
+  
+
+
+
+ */
+ @media screen and (min-width: 900px) {
+    
+    .menu-f{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    margin-left: -350px;
+    float: left;
+    border: solid;
+    min-width: 300px;
+}
+  }
+ .foto-cv{
+    max-width: 100px;
+    max-height: 100px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    }
+
+ .enlace-top{
+    background-color: cornsilk;
+    max-width: 300px;
+}
+
+.align-center{
+    display:block;
+    margin:auto;
+}
+.margin-left-40{
+    margin-left: 40px;
+}
+
+p img{
+    max-width: 30px;
+}
+
+.top-30{
+    margin-top: 30px;
+}

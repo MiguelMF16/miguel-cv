@@ -1,1 +1,25 @@
-<p>studies works!</p>
+<h1 class="center">Estudios <img class="studies-mid" src="./../../../../assets//img/studies.png"> </h1>
+<h4 class="center">
+    <p>Boletín de notas de los dos años</p>
+    <p>Pero antes una aclaración, en el primer año no conseguí sacar todas las asignaturas con 10</p>
+    <p>A la primera con 10, así que tuve que presentarme a las recuperaciones (donde se podía bajar nota)</p>
+    <p>El boletín que vais a ver está modificado POR MI para poner las notas que tengo despues de las recuperaciones</p>
+    <p>Ellos no entregaron los boletines despues de las recuperaciones y por eso he hecho esto</p>
+    <p>Aun así para cualquier duda 956 26 54 96 este es el nº del centro</p>
+    <p>Por último, Formación y Orientación Laboral, pedí presentarme a la recuperación pero no me la hicieron y me dejaron el 9</p>
+</h4>
+<div>
+    <div><button type="button" (click)="setMostrar()">{{mostrarocultar}} notas de 1º</button>
+    
+        <button type="button" (click)="setMostrar2()">{{mostrarocultar2}} notas de 2º</button>
+        <p>Voy a enseñarlas solo por honestidad pero puedo asegurar que las notas están recuperadas, igual tambien</p>
+        <p>Aclaro así que no saqué 10 a la primera en todo</p>
+        <button type="button" (click)="setMostrar3()">{{mostrarocultar2}} notas de 1º sin corregir por el centro</button>
+        
+    </div>
+    <div>
+        <img *ngIf="mostrar" src="./../../../../assets//img/nota1.png">
+        <img *ngIf="mostrar2" src="./../../../../assets//img/nota2.png">
+        <img *ngIf="mostrar3" src="./../../../../assets//img/nota3.png">
+    </div>
+</div>

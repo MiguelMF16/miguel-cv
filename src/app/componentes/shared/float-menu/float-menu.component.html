@@ -1,1 +1,20 @@
-<p>float-menu works!</p>
+<div class="menu-f top-30">
+    <div class="{{options}} panel-flotante-g">
+        <div class="enlace-top">
+            <a (click)="setAbrirCerrar()" >{{instruccion}}</a>
+        <hr>
+        </div>
+        <div *ngIf="ventanaabierta">
+        <img src="./../../../../assets/img/photo.png" class="foto-cv align-center">
+        <div>
+            <p class="margin-left-40" >Miguel Ángel Martín Fopiani</p>
+            <p class="margin-left-40 icon-low">
+                <img src="./../../../../assets/img/tlfn.png">
+            692944505</p>
+            <p class="margin-left-40"><a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox?compose=CllgCJZWxTFJhVvXBHzjbNwHFdMHRfbqcWNtqMqBRdtrTLwxzXXsMCgKFkSrZChMVvDjhZdQdRL">martinfopiani@gmail.com</a></p>
+            <p class="margin-left-40" >♦ Carnet de Conducir: <input type="checkbox" checked></p>
+            <p class="margin-left-40" >♦ Disponibilidad para viajar <input type="checkbox" checked></p>
+        </div>
+        </div>
+    </div>
+</div>
