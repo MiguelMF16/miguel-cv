@@ -12,6 +12,7 @@ import { StudiesComponent } from './componentes/pages/studies/studies.component'
 import { JobsComponent } from './componentes/pages/jobs/jobs.component';
 import { ProjectsComponent } from './componentes/pages/projects/projects.component';
 import { APP_ROUTING } from './app.routes';
+import { AboutComponent } from './componentes/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { APP_ROUTING } from './app.routes';
     ProgrammingLanguageComponent,
     StudiesComponent,
     JobsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

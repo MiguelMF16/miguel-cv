@@ -27,7 +27,11 @@ export class NavbararService {
       title: 'Proyectos',
       path: '/projects',
       icon: './../../assets/img/project.png'
-    },
+    },{
+      title: 'Sobre mi',
+      path: '/about',
+      icon: './../../assets/img/yo.png'
+    }
   ];
 
   public engmenu: Menuvar[] = [

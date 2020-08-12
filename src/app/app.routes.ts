@@ -4,6 +4,7 @@ import { StudiesComponent } from './componentes/pages/studies/studies.component'
 import { JobsComponent } from './componentes/pages/jobs/jobs.component';
 import { ProgrammingLanguageComponent } from './componentes/pages/programming-language/programming-language.component';
 import { ProjectsComponent } from './componentes/pages/projects/projects.component';
+import { AboutComponent } from './componentes/pages/about/about.component';
 
 
 
@@ -13,6 +14,7 @@ const ROUTES: Routes = [
     { path: 'jobs', component: JobsComponent },
     { path: 'programming-language', component: ProgrammingLanguageComponent },
     { path: 'projects', component: ProjectsComponent },
+    { path: 'about', component: AboutComponent },
     { path: '**', redirectTo: '/achievements' },
 
 ];
