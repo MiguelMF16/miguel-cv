@@ -1,14 +1,49 @@
 <h1 class="center animate__animated animate__rubberBand">Lenguajes de programación <img class="icon-mid animate__animated animate__backInRight" src="./../../../../assets/img/achievements-icon.png"></h1>
-<h4 class="center animate__animated animate__fadeInUp">
+<!-- <h4 class="center animate__animated animate__fadeInUp"> -->
    
-    <p>
+    
+        <!-- <div class="container">
+            <div class="row">
+              <div class="col">FrameWorks</div>
+              <div class="col">Lenguajes</div>
+              <div class="w-100"></div>
+              <div class="col">
+                  <ul>
+                      <li *ngFor="let fw of frameworkslist">
+                        {{fw}}
+                      </li>
+                  </ul>
+              </div>
+              <div class="col">
+                <ul>
+                    <li *ngFor="let language of languagelist">
+                        {{language}}
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="col">
+            <ul>
+                Entornos de Desarrollo / Editores de Código
+                <li *ngFor="let entorno of entornoslist">
+                    {{entorno}}
+                </li>
+            </ul>
+          </div>
+</h4> -->
+<h3 class="center">No le tengo miedo a iniciarme en ningún lenguaje.</h3>
+<div class="carta-miguel animate__animated animate__fadeInUp" *ngFor="let lenguaje of lenguajes">
+  <img class="float-left widht-150" [src]="lenguaje.icon" alt="{{lenguaje.nombre}}">
+  <div class="padding-top-20 float-left">
+    <h5>{{lenguaje.nombre}}</h5>
+    <br>
+    <p class="card-text">{{lenguaje.nivel}}</p>
+    <p class="card-text"><small class="text-muted">{{lenguaje.tiempo}}</small></p>
+  </div>
+  <div class="padding-top-20 text-right margin-right-20">
+   {{lenguaje.historia}}
+  </div>
 
-
-
-
-
-
-
-
-    </p>
-</h4>
+</div>

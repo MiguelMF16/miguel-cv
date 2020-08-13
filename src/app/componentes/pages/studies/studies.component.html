@@ -1,5 +1,5 @@
 <h1 class="center animate__animated animate__rubberBand">Estudios <img class="studies-mid animate__animated animate__backInRight" src="./../../../../assets//img/studies.png"> </h1>
-<h4 class="center animate__animated animate__fadeInUp">
+<h4 class="justify animate__animated animate__bounceInRight">
     <p>Boletín de notas de los dos años</p>
     <p>Pero antes una aclaración, en el primer año no conseguí sacar todas las asignaturas con 10</p>
     <p>A la primera con 10, así que tuve que presentarme a las recuperaciones (donde se podía bajar nota)</p>
@@ -9,12 +9,13 @@
     <p>Por último, Formación y Orientación Laboral, pedí presentarme a la recuperación pero no me la hicieron y me dejaron el 9</p>
 </h4>
 <div class="animate__animated animate__fadeInUp">
-    <div><button type="button" (click)="setMostrar()">{{mostrarocultar}} notas de 1º</button>
+    <div *ngFor="let mostrar of vision; let i = index">
+        <button class="btn btn-outline-primary {{estilo[0]}}" type="button" (click)="setMostrar()" >{{mostrarocultar[i]}} notas de 1º</button>
     
-        <button type="button" (click)="setMostrar2()">{{mostrarocultar2}} notas de 2º</button>
+        <button class="btn btn-outline-primary {{estilo[1]}}" style="margin-left: 20px;" type="button" (click)="setMostrar2()">{{mostrarocultar2}} notas de 2º</button>
         <p>Voy a enseñarlas solo por honestidad pero puedo asegurar que las notas están recuperadas, igual tambien</p>
         <p>Aclaro así que no saqué 10 a la primera en todo</p>
-        <button type="button" (click)="setMostrar3()">{{mostrarocultar3}} notas de 1º sin corregir por el centro</button>
+        <button class="btn btn-outline-primary {{estilo[2]}}" type="button" (click)="setMostrar3()">{{mostrarocultar3}} notas de 1º sin corregir por el centro</button>
         
     </div>
     <div>
